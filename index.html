@@ -9,18 +9,17 @@
     </head>
 
     <body>
-        <h1> Sharon Lei</h1>
+        <a id="intro"><h1> Sharon Lei</h1></a>
 
         <main>
-            <p> I'm a fourth year student at the <i><b>University of California, San Diego</b></i> studying Mathematics and Economics with a 
-                minor in Computer Science.
+            <p> I'm a fourth year student at the <strong>University of California, San Diego</strong> studying <i>Mathematics and Economics with a 
+                minor in Computer Science.</i>
             </p>
-            <p> I am currently working as a student worker at the business office of Scripps Institute of Oceanography ,not to 
+            <p> I am currently working as a student worker at the business office of <b>Scripps Institute of Oceanography</b>,not to 
                 be confused with Scripps Hospital. Before we went remote, I was able to see the ocean waves from my office space 
                 which was my favorite part of the day.
             </p>
         </main>
-
         <img src="https://photographylife.com/wp-content/uploads/2015/06/DSCF3052.jpg">
         <p>In the future I want to pursue a career in the field of software development. I enjoy the processing of figuring our what algorithm 
             to implement in order for the program to run smoothly. When I was first exposed to computer science I used to struggle with code 
@@ -30,6 +29,53 @@
             t = turtle.Turtle()<br>
             t.right(90)
         </code></p>
+
+        <hr>
+
+        <section>
+            <a href="https://i.imgflip.com/1gtbbw.jpg"><h2>Some Other interests and hobbies</h2></a>
+            <a href="#intro"><p>Get to know me here.</p></a>
+            <p>My Hobbies include:</p>
+            <ul>
+                <li>Hiking</li>
+                <li>Going to the beach</li>
+                <li>Makeup</li>
+                <li>Shopping</li>
+                <li>Watching shows and movies</li>
+            </ul>
+        </section>
+
+        <section>
+            <p>On my free time, I enjoy watching YouTube videos. One of my favorites is Mike Chen
+                because he creates content of him traveling around the world and trying out food from various countries.</p>
+
+            <div style="text-align:center"> 
+                <pre>You can adjust the size of the video by toggling with the buttons below.</pre>
+                <iframe id="mikeychen" width="560" height="315" src="https://www.youtube.com/embed/14UIXG8LdbE?controls=0" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <button onclick="makeBig()">Big</button>
+                <button onclick="makeSmall()">Small</button>
+                <button onclick="makeNormal()">Normal</button>
+                <br>
+
+            </div> 
+            <script> 
+                var myVideo = document.getElementById("mikeychen"); 
+                
+                function makeBig() { 
+                    myVideo.width = 700; 
+                } 
+                
+                function makeSmall() { 
+                    myVideo.width = 420; 
+                } 
+                
+                function makeNormal() { 
+                    myVideo.width = 560; 
+                } 
+            </script>
+        </section>
 
     </body>
 
